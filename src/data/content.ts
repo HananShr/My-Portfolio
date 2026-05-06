@@ -252,8 +252,8 @@ export const content: Record<"fr" | "en", ContentType> = {
             "Chart.js",
           ],
           // TODO: Replace with your real GitHub link
-          github: "#",
-          demo: "#",
+          github: "#https://github.com/HananShr/HSE-Managment.git",
+          // demo: "#",
           image: "/projects/gcb-cover.png",
         },
         {
@@ -291,7 +291,7 @@ export const content: Record<"fr" | "en", ContentType> = {
           ],
 
           github: "https://github.com/HananShr/CarPooling.git",
-          demo: "#",
+          // demo: "#",
           image: "/projects/carpooling-cover.png",
         },
         {
@@ -317,8 +317,8 @@ export const content: Record<"fr" | "en", ContentType> = {
             "OpenPyXL",
           ],
 
-          github: "#",
-          demo: "#",
+          github: "#https://github.com/HananShr/BillMate.git",
+          // demo: "#",
           image: "/projects/billmate-cover.png",
         },
         {
@@ -336,8 +336,8 @@ export const content: Record<"fr" | "en", ContentType> = {
 
           techStack: ["Python", "Tkinter", "JSON"],
 
-          github: "#",
-          demo: "#",
+          github: "#https://github.com/HananShr/RevoQuiz.git",
+          // demo: "#",
           image: "/projects/revoquiz-cover.png",
         },
         {
@@ -362,7 +362,7 @@ export const content: Record<"fr" | "en", ContentType> = {
           ],
 
           github: "https://github.com/HananShr/Movies-Website.git",
-          demo: "#",
+          // demo: "#",
           image: "/projects/movies-cover.png",
         },
         // {
@@ -463,7 +463,7 @@ export const content: Record<"fr" | "en", ContentType> = {
     },
     hero: {
       greeting: "Hi, I'm",
-      name: "Hanane Saharaoui",
+      name: "Hanane SAHARAOUI",
       title: "Software Engineer",
       description:
         "Master's graduate in software engineering, passionate about web development, artificial intelligence, and building reliable and innovative digital solutions.",
@@ -617,8 +617,8 @@ export const content: Record<"fr" | "en", ContentType> = {
             "Scikit-learn",
             "Chart.js",
           ],
-          github: "#",
-          demo: "#",
+          github: "#https://github.com/HananShr/HSE-Managment.git",
+          // demo: "#",
           image: "/projects/gcb-cover.png",
         },
         {
@@ -656,7 +656,7 @@ export const content: Record<"fr" | "en", ContentType> = {
           ],
 
           github: "https://github.com/HananShr/CarPooling.git",
-          demo: "#",
+          // demo: "#",
           image: "/projects/carpooling-cover.png",
         },
         {
@@ -683,7 +683,7 @@ export const content: Record<"fr" | "en", ContentType> = {
           ],
 
           github: "#",
-          demo: "#",
+          // demo: "#",
           image: "/projects/billmate-cover.png",
         },
         {
@@ -701,8 +701,8 @@ export const content: Record<"fr" | "en", ContentType> = {
 
           techStack: ["Python", "Tkinter", "JSON"],
 
-          github: "#",
-          demo: "#",
+          github: "#https://github.com/HananShr/RevoQuiz.git",
+          // demo: "#",
           image: "/projects/revoquiz-cover.png",
         },
         {
@@ -727,19 +727,19 @@ export const content: Record<"fr" | "en", ContentType> = {
           ],
 
           github: "https://github.com/HananShr/Movies-Website.git",
-          demo: "#",
+          // demo: "#",
           image: "/projects/movies-cover.png",
         },
-        {
-          title: "GitHub Projects",
-          type: "Personal & Academic Projects",
-          description:
-            "A selection of personal and academic projects available on my GitHub profile.",
-          features: [],
-          techStack: [],
-          github: "https://github.com/HananShr",
-          image: "",
-        },
+        // {
+        //   title: "GitHub Projects",
+        //   type: "Personal & Academic Projects",
+        //   description:
+        //     "A selection of personal and academic projects available on my GitHub profile.",
+        //   features: [],
+        //   techStack: [],
+        //   github: "https://github.com/HananShr",
+        //   image: "",
+        // },
       ],
     },
     educationSection: {
