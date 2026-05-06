@@ -7,7 +7,11 @@ interface Props {
   content: ContentType;
 }
 
-const flags = ["/dz-flag.png", "/fr-flag.png", "/eng-flag.png"];
+const flags = [
+  import.meta.env.BASE_URL + "dz-flag.png",
+  import.meta.env.BASE_URL + "fr-flag.png",
+  import.meta.env.BASE_URL + "eng-flag.png",
+];
 export default function Languages({ content }: Props) {
   const c = content.languagesSection;
 
@@ -27,6 +31,7 @@ export default function Languages({ content }: Props) {
               className="group w-52 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-md p-6 text-center hover:border-purple-500/30 hover:bg-purple-500/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-500/10"
             >
               <img
+                //src={asset("hanane.jpg")}
                 src={flags[i]}
                 alt="flag"
                 className="w-10 h-10 object-contain mx-auto mb-3"
