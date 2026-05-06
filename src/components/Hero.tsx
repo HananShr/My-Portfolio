@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Download, Send } from "lucide-react";
 import type { ContentType } from "../data/content";
 import { useState } from "react";
+import { asset } from "../utils/asset";
 
 const floatingTags = [
   "React",
@@ -137,7 +138,7 @@ export default function Hero({ content }: Props) {
               </div>
             ) : (
               <img
-                src="/hanane.jpg"
+                src={asset("hanane.jpg")}
                 alt="Hanane Saharaoui"
                 className="w-full h-full object-cover"
                 onError={() => setImgError(true)}

@@ -1,8 +1,11 @@
-// ============================================================
+// src/data/content.ts
+// ─────────────────────────────────────────────────────────────
 // BILINGUAL CONTENT FILE — FR / EN
-// Edit this file to update all portfolio content.
-// ============================================================
+// Image paths are plain strings like "projects/gcb-cover.png"
+// The asset() utility in components handles the base URL.
+// ─────────────────────────────────────────────────────────────
 
+// NO import of base here — removed entirely
 export interface ContentType {
   nav: {
     home: string;
@@ -82,7 +85,6 @@ export interface ContentType {
 }
 
 export const content: Record<"fr" | "en", ContentType> = {
-  // ===================== FRENCH =====================
   fr: {
     nav: {
       home: "Accueil",
@@ -251,10 +253,9 @@ export const content: Record<"fr" | "en", ContentType> = {
             "Scikit-learn",
             "Chart.js",
           ],
-          // TODO: Replace with your real GitHub link
-          github: "#https://github.com/HananShr/HSE-Managment.git",
-          // demo: "#",
-          image: "/projects/gcb-cover.png",
+          github: "https://github.com/HananShr/HSE-Managment.git",
+          // ↓ plain path — NO leading slash, NO base prefix
+          image: "projects/gcb-cover.png",
         },
         {
           title: "Visualisation et analyse de données NPS",
@@ -268,38 +269,33 @@ export const content: Record<"fr" | "en", ContentType> = {
             "Analyse des indicateurs clients",
           ],
           techStack: ["Apache NiFi", "Python", "Pandas", "Chart.js", "SQL"],
-          image: "/projects/djezzy-cover.png",
+          image: "projects/djezzy-cover.png",
         },
         {
           title: "Application Web de Covoiturage",
           type: "Projet Académique",
           description:
-            "Une plateforme web qui met en relation conducteurs et passagers pour partager des trajets, réduire les coûts et améliorer l’efficacité du transport.",
-
+            "Une plateforme web qui met en relation conducteurs et passagers pour partager des trajets, réduire les coûts et améliorer l'efficacité du transport.",
           features: [
             "Authentification des utilisateurs",
             "Proposition et demande de trajets",
             "Recherche et correspondance des trajets",
             "Gestion des trajets",
           ],
-
           techStack: [
             "React",
             "Flask / Node.js",
             "Python / JavaScript",
             "SQL / MongoDB",
           ],
-
           github: "https://github.com/HananShr/CarPooling.git",
-          // demo: "#",
-          image: "/projects/carpooling-cover.png",
+          image: "projects/carpooling-cover.png",
         },
         {
           title: "BillMate - Gestion des Factures",
           type: "Projet Freelance (Client Privé)",
           description:
-            "BillMate est une application de gestion de factures moderne permettant aux entreprises d’organiser, suivre et gérer facilement leurs factures. Elle offre une interface intuitive et des outils avancés de recherche, filtrage et exportation de données.",
-
+            "BillMate est une application de gestion de factures moderne permettant aux entreprises d'organiser, suivre et gérer facilement leurs factures.",
           features: [
             "Ajout et gestion des factures",
             "Génération automatique de numéros de facture",
@@ -308,51 +304,42 @@ export const content: Record<"fr" | "en", ContentType> = {
             "Export des données vers Excel",
             "Interface moderne en mode sombre (Dark Blue)",
           ],
-
           techStack: [
             "Python",
-            "SQL / SQLite (ou Excel)",
+            "SQL / SQLite",
             "Tkinter / Interface Desktop",
             "Pandas",
             "OpenPyXL",
           ],
-
-          github: "#https://github.com/HananShr/BillMate.git",
-          // demo: "#",
-          image: "/projects/billmate-cover.png",
+          github: "https://github.com/HananShr/BillMate.git",
+          image: "projects/billmate-cover.png",
         },
         {
           title: "RevoQuiz - Quiz sur la Révolution Algérienne",
           type: "Application Desktop Éducative",
           description:
-            "RevoQuiz est une application desktop interactive qui permet d’apprendre l’histoire de la Révolution Algérienne à travers des quiz et du contenu éducatif. Elle propose une expérience simple, ludique et entièrement en français.",
-
+            "RevoQuiz est une application desktop interactive qui permet d'apprendre l'histoire de la Révolution Algérienne à travers des quiz et du contenu éducatif.",
           features: [
             "Interface en français",
             "Quiz interactifs (facile, moyen, difficile)",
             "Mode information historique",
             "Application Windows (.exe)",
           ],
-
           techStack: ["Python", "Tkinter", "JSON"],
-
-          github: "#https://github.com/HananShr/RevoQuiz.git",
-          // demo: "#",
-          image: "/projects/revoquiz-cover.png",
+          github: "https://github.com/HananShr/RevoQuiz.git",
+          image: "projects/revoquiz-cover.png",
         },
         {
           title: "Movie App",
           type: "Projet Frontend React",
           description:
-            "Une application web moderne de films développée avec React. Elle permet de rechercher des films, consulter les résultats et gérer une liste de favoris via une interface simple et responsive.",
-
+            "Une application web moderne de films développée avec React. Elle permet de rechercher des films, consulter les résultats et gérer une liste de favoris.",
           features: [
             "Recherche de films en temps réel",
             "Ajout / suppression des favoris",
             "Page de gestion des favoris",
             "Interface responsive et moderne",
           ],
-
           techStack: [
             "React",
             "JavaScript (ES6+)",
@@ -360,39 +347,9 @@ export const content: Record<"fr" | "en", ContentType> = {
             "CSS",
             "API de films publique",
           ],
-
           github: "https://github.com/HananShr/Movies-Website.git",
-          // demo: "#",
-          image: "/projects/movies-cover.png",
+          image: "projects/movies-cover.png",
         },
-        // {
-        //   title: "Project Name (Coming Soon)",
-        //   type: "In Progress Project",
-        //   description:
-        //     "This project is currently under development. More details will be available soon.",
-
-        //   features: [
-        //     "In development",
-        //     "Planned feature: ...",
-        //     "Planned feature: ...",
-        //   ],
-
-        //   techStack: ["React", "Node.js"],
-
-        //   github: "#",
-        //   demo: "#",
-        //   image: "/projects/coming-soon.png",
-        // },
-        //   {
-        //     title: "Projets GitHub",
-        //     type: "Projets personnels & académiques",
-        //     description:
-        //       "Une sélection de projets personnels et académiques disponibles sur mon profil GitHub.",
-        //     features: [],
-        //     techStack: [],
-        //     github: "https://github.com/HananShr",
-        //     image: "",
-        //   },
       ],
     },
     educationSection: {
@@ -448,7 +405,6 @@ export const content: Record<"fr" | "en", ContentType> = {
     },
   },
 
-  // ===================== ENGLISH =====================
   en: {
     nav: {
       home: "Home",
@@ -617,9 +573,8 @@ export const content: Record<"fr" | "en", ContentType> = {
             "Scikit-learn",
             "Chart.js",
           ],
-          github: "#https://github.com/HananShr/HSE-Managment.git",
-          // demo: "#",
-          image: "/projects/gcb-cover.png",
+          github: "https://github.com/HananShr/HSE-Managment.git",
+          image: "projects/gcb-cover.png",
         },
         {
           title: "NPS Data Visualization and Analysis",
@@ -633,38 +588,33 @@ export const content: Record<"fr" | "en", ContentType> = {
             "Customer indicator analysis",
           ],
           techStack: ["Apache NiFi", "Python", "Pandas", "Chart.js", "SQL"],
-          image: "/projects/djezzy-cover.png",
+          image: "projects/djezzy-cover.png",
         },
         {
           title: "Carpooling Web Application",
           type: "Academic Project",
           description:
             "A web platform that connects drivers and passengers to share rides, reducing costs and improving transportation efficiency.",
-
           features: [
             "User authentication",
             "Offer and request rides",
             "Search and match trips",
             "Trip management",
           ],
-
           techStack: [
             "React",
             "Flask / Node.js",
             "Python / JavaScript",
             "SQL / MongoDB",
           ],
-
           github: "https://github.com/HananShr/CarPooling.git",
-          // demo: "#",
-          image: "/projects/carpooling-cover.png",
+          image: "projects/carpooling-cover.png",
         },
         {
           title: "BillMate - Invoice Management System",
           type: "Freelance Project (Private Client)",
           description:
-            "BillMate is a modern invoice management application designed to help companies efficiently organize, track, and manage their invoices. It provides an intuitive interface with advanced search, filtering, and data export capabilities.",
-
+            "BillMate is a modern invoice management application designed to help companies efficiently organize, track, and manage their invoices.",
           features: [
             "Add and manage invoices",
             "Automatic invoice number generation",
@@ -673,51 +623,42 @@ export const content: Record<"fr" | "en", ContentType> = {
             "Export data to Excel",
             "Modern dark mode (Dark Blue UI)",
           ],
-
           techStack: [
             "Python",
-            "SQL / SQLite (or Excel-based storage)",
+            "SQL / SQLite",
             "Tkinter / Desktop UI",
             "Pandas",
             "OpenPyXL",
           ],
-
-          github: "#",
-          // demo: "#",
-          image: "/projects/billmate-cover.png",
+          github: "https://github.com/HananShr/BillMate.git",
+          image: "projects/billmate-cover.png",
         },
         {
           title: "RevoQuiz - Algerian Revolution Quiz App",
           type: "Educational Desktop Application",
           description:
-            "RevoQuiz is an interactive desktop application designed to learn about the Algerian Revolution through quizzes and educational content. It offers a simple and engaging experience fully in French.",
-
+            "RevoQuiz is an interactive desktop application designed to learn about the Algerian Revolution through quizzes and educational content.",
           features: [
             "French-language interface",
             "Interactive quizzes (Easy, Medium, Hard)",
             "Historical information mode",
             "Windows desktop app (.exe)",
           ],
-
           techStack: ["Python", "Tkinter", "JSON"],
-
-          github: "#https://github.com/HananShr/RevoQuiz.git",
-          // demo: "#",
-          image: "/projects/revoquiz-cover.png",
+          github: "https://github.com/HananShr/RevoQuiz.git",
+          image: "projects/revoquiz-cover.png",
         },
         {
           title: "Movie App",
           type: "Frontend React Project",
           description:
-            "A modern movie browsing web application built with React. It allows users to search for movies, view details, and manage a favorites list using a clean and responsive interface.",
-
+            "A modern movie browsing web application built with React. It allows users to search for movies, view details, and manage a favorites list.",
           features: [
             "Real-time movie search",
             "Add/remove favorites",
             "Favorites management page",
             "Responsive and clean UI",
           ],
-
           techStack: [
             "React",
             "JavaScript (ES6+)",
@@ -725,21 +666,9 @@ export const content: Record<"fr" | "en", ContentType> = {
             "CSS",
             "Public Movie API",
           ],
-
           github: "https://github.com/HananShr/Movies-Website.git",
-          // demo: "#",
-          image: "/projects/movies-cover.png",
+          image: "projects/movies-cover.png",
         },
-        // {
-        //   title: "GitHub Projects",
-        //   type: "Personal & Academic Projects",
-        //   description:
-        //     "A selection of personal and academic projects available on my GitHub profile.",
-        //   features: [],
-        //   techStack: [],
-        //   github: "https://github.com/HananShr",
-        //   image: "",
-        // },
       ],
     },
     educationSection: {
