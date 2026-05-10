@@ -350,6 +350,22 @@ export const content: Record<"fr" | "en", ContentType> = {
           github: "https://github.com/HananShr/Movies-Website.git",
           image: "projects/movies-cover.png",
         },
+        {
+          title: "Castle Food - Restaurant Website",
+          type: "Frontend React Project",
+          description:
+            "Modern restaurant web application allowing customers to browse the menu and place orders online with automatic WhatsApp ordering.",
+          features: [
+            "Interactive menu",
+            "Online ordering",
+            "Automatic WhatsApp orders",
+            "Bilingual interface (FR/AR)",
+          ],
+          techStack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+          github: "https://github.com/HananShr/Restaurant-Website.git",
+          demo: "https://hananshr.github.io/Restaurant-Website/",
+          image: "projects/castle-food-cover.png",
+        },
       ],
     },
     educationSection: {
@@ -668,6 +684,22 @@ export const content: Record<"fr" | "en", ContentType> = {
           ],
           github: "https://github.com/HananShr/Movies-Website.git",
           image: "projects/movies-cover.png",
+        },
+        {
+          title: "Castle Food - Site Web Restaurant",
+          type: "Projet Frontend React",
+          description:
+            "Application web moderne de restaurant permettant de consulter le menu et de passer des commandes en ligne avec envoi automatique via WhatsApp.",
+          features: [
+            "Menu interactif",
+            "Commande en ligne",
+            "Envoi automatique via WhatsApp",
+            "Interface bilingue (FR/AR)",
+          ],
+          techStack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+          github: "https://github.com/HananShr/Restaurant-Website.git",
+          demo: "https://hananshr.github.io/Restaurant-Website/",
+          image: "projects/castle-food-cover.png",
         },
       ],
     },
