@@ -20,7 +20,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-950 text-white selection:bg-purple-500/30 selection:text-white">
-      {/* Animated gradient background */}
       <div className="fixed inset-0 z-0 overflow-hidden">
         <div className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] animate-[spin_60s_linear_infinite] opacity-20">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-purple-700/30 blur-[150px]" />

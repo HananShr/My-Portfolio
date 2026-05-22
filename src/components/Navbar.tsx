@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import type { ContentType } from "../data/content";
+import { asset } from "../utils/asset";
 
 interface Props {
   lang: "fr" | "en";
@@ -70,8 +71,17 @@ export default function Navbar({ lang, setLang, content }: Props) {
           {/* Logo */}
           <button
             onClick={() => scrollTo("home")}
-            className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
-          ></button>
+            className="flex items-center gap-2"
+          >
+            <img
+              src={asset("favicon.png")}
+              alt="Logo"
+              className="h-10 w-10 object-contain"
+            />
+            <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+              MyPortfolio
+            </span>
+          </button>
 
           {/* Desktop links */}
           <div className="hidden lg:flex items-center gap-1">

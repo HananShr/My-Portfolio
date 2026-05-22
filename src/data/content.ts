@@ -348,6 +348,7 @@ export const content: Record<"fr" | "en", ContentType> = {
             "API de films publique",
           ],
           github: "https://github.com/HananShr/Movies-Website.git",
+          demo: "https://hananshr.github.io/Movies-Website/",
           image: "projects/movies-cover.png",
         },
         {
@@ -365,6 +366,32 @@ export const content: Record<"fr" | "en", ContentType> = {
           github: "https://github.com/HananShr/Restaurant-Website.git",
           demo: "https://hananshr.github.io/Restaurant-Website/",
           image: "projects/castle-food-cover.png",
+        },
+        {
+          title: "ADMIR Agency - Site Web d'Agence Créative",
+          type: "Projet Frontend Freelance / Portfolio",
+          description:
+            "Site web d’une agence créative spécialisée en design, production audiovisuelle et marketing digital.",
+
+          features: [
+            "Interface moderne et responsive",
+            "Animations fluides avec Framer Motion",
+            "Portfolio de projets",
+            "Section services",
+            "Formulaire de contact avec WhatsApp",
+            "Support multilingue (FR / EN / AR)",
+          ],
+
+          techStack: [
+            "React",
+            "TypeScript",
+            "Vite",
+            "Tailwind CSS",
+            "Framer Motion",
+            "i18n",
+          ],
+          image: "projects/admir-agency-cover.png",
+          demo: "https://admir-agency.vercel.app/",
         },
       ],
     },
@@ -683,6 +710,8 @@ export const content: Record<"fr" | "en", ContentType> = {
             "Public Movie API",
           ],
           github: "https://github.com/HananShr/Movies-Website.git",
+          demo: "https://hananshr.github.io/Movies-Website/",
+
           image: "projects/movies-cover.png",
         },
         {
@@ -700,6 +729,33 @@ export const content: Record<"fr" | "en", ContentType> = {
           github: "https://github.com/HananShr/Restaurant-Website.git",
           demo: "https://hananshr.github.io/Restaurant-Website/",
           image: "projects/castle-food-cover.png",
+        },
+        {
+          title: "ADMIR Agency - Creative Agency Website",
+          type: "Freelance Frontend Project / Portfolio",
+          description:
+            "Website for a modern creative agency specializing in design, audiovisual production, and digital marketing.",
+
+          features: [
+            "Modern and responsive interface",
+            "Smooth animations with Framer Motion",
+            "Project portfolio section",
+            "Services showcase section",
+            "Contact form with WhatsApp integration",
+            "Multilingual support (FR / EN / AR)",
+          ],
+
+          techStack: [
+            "React",
+            "TypeScript",
+            "Vite",
+            "Tailwind CSS",
+            "Framer Motion",
+            "i18n",
+          ],
+
+          image: "projects/admir-agency-cover.png",
+          demo: "https://admir-agency.vercel.app/",
         },
       ],
     },
