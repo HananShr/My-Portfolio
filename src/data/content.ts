@@ -393,6 +393,22 @@ export const content: Record<"fr" | "en", ContentType> = {
           image: "projects/admir-agency-cover.png",
           demo: "https://admir-agency.vercel.app/",
         },
+        {
+          title: "NG School - Summer Camp Programs 2026",
+          type: "Projet Frontend React",
+          description:
+            "Site web vitrine pour une école de formation à Boumerdès proposant des programmes de camp d'été 2026 pour enfants, jeunes et adultes (bureautique, design Canva, Python, langues, calcul mental, cuisine, artisanat, sciences) avec inscription via WhatsApp.",
+          features: [
+            "Programmes été 2026 (enfants, jeunes & adultes)",
+            "Inscription en ligne via WhatsApp",
+            "Interface trilingue (FR/EN/AR)",
+            "Design responsive & animé",
+          ],
+          techStack: ["React", "TypeScript", "Tailwind CSS", "Vite", "i18next"],
+          github: "https://github.com/HananShr/NG-Summer-camp.git",
+          demo: "https://ng-summer-camp.vercel.app/",
+          image: "projects/ng-summer-camp-cover.png",
+        },
       ],
     },
     educationSection: {
@@ -756,6 +772,22 @@ export const content: Record<"fr" | "en", ContentType> = {
 
           image: "projects/admir-agency-cover.png",
           demo: "https://admir-agency.vercel.app/",
+        },
+        {
+          title: "NG School - Summer Camp Programs 2026",
+          type: "React Frontend Project",
+          description:
+            "A showcase website for a training school in Boumerdès offering Summer Camp 2026 programs for children, teenagers, and adults, including office skills, Canva design, Python programming, languages, mental math, cooking, crafts, and science courses, with registration through WhatsApp.",
+          features: [
+            "Summer 2026 programs for children, teenagers, and adults",
+            "Online registration via WhatsApp",
+            "Multilingual interface (French, English, and Arabic)",
+            "Responsive and animated design",
+          ],
+          techStack: ["React", "TypeScript", "Tailwind CSS", "Vite", "i18next"],
+          github: "https://github.com/HananShr/NG-Summer-camp.git",
+          demo: "https://ng-summer-camp.vercel.app/",
+          image: "projects/ng-summer-camp-cover.png",
         },
       ],
     },
