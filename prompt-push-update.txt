@@ -4,5 +4,5 @@ git init
 git add .
 git commit -m "deploy"
 git branch -M gh-pages
-git remote add origin https://github.com/HananShr/Restaurant-Website.git
+git remote add origin https://github.com/HananShr/My-Portfolio.git
 git push -f origin gh-pages 
